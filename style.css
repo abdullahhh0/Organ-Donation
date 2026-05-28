@@ -23,11 +23,15 @@ body{
     overflow-x: hidden;
 
     color: white;
+
+    margin: 0;
 }
 
 .auth-container{
 
     width: 100%;
+
+    min-height: 100vh;
 
     display: flex;
 
