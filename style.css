@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+/* =========================
+   RESET
+========================= */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* =========================
+   BODY
+========================= */
 
 body{
 
@@ -27,6 +35,10 @@ body{
     margin: 0;
 }
 
+/* =========================
+   AUTH CONTAINER
+========================= */
+
 .auth-container{
 
     width: 100%;
@@ -38,7 +50,13 @@ body{
     justify-content: center;
 
     align-items: center;
+
+    padding: 20px;
 }
+
+/* =========================
+   AUTH CARD
+========================= */
 
 .auth-card{
 
@@ -46,7 +64,9 @@ body{
 
     max-width: 430px;
 
-    padding: 40px;
+    padding: 45px 40px;
+
+    margin: auto;
 
     border-radius: 28px;
 
@@ -74,11 +94,15 @@ body{
         0 12px 35px rgba(0,0,0,0.3);
 }
 
+/* =========================
+   TITLE
+========================= */
+
 .auth-card h1{
 
     color: white;
 
-    font-size: 2.1rem;
+    font-size: 2.2rem;
 
     margin-bottom: 10px;
 
@@ -87,14 +111,22 @@ body{
     letter-spacing: 1px;
 }
 
+/* =========================
+   SUBTITLE
+========================= */
+
 .subtitle{
 
-    color: rgba(255,255,255,0.8);
+    color: rgba(255,255,255,0.85);
 
     font-size: 15px;
 
     margin-bottom: 30px;
 }
+
+/* =========================
+   FORM
+========================= */
 
 form{
 
@@ -104,6 +136,10 @@ form{
 
     gap: 18px;
 }
+
+/* =========================
+   INPUTS
+========================= */
 
 form input{
 
@@ -139,6 +175,10 @@ form input:focus{
         0 0 0 3px rgba(255,255,255,0.15);
 }
 
+/* =========================
+   BUTTON
+========================= */
+
 form button{
 
     width: 100%;
@@ -172,6 +212,10 @@ form button:hover{
         0 10px 20px rgba(0,0,0,0.2);
 }
 
+/* =========================
+   SWITCH TEXT
+========================= */
+
 .switch-text{
 
     margin-top: 25px;
@@ -197,11 +241,17 @@ form button:hover{
     text-decoration: underline;
 }
 
+/* =========================
+   HEADER
+========================= */
+
 header{
 
     position: fixed;
 
     top: 0;
+
+    left: 0;
 
     width: 100%;
 
@@ -213,7 +263,11 @@ header{
 
     backdrop-filter: blur(10px);
 
+    -webkit-backdrop-filter: blur(10px);
+
     color: white;
+
+    z-index: 1000;
 
     box-shadow:
         0 4px 12px rgba(0,0,0,0.1);
@@ -225,6 +279,10 @@ header h1{
 
     font-weight: 700;
 }
+
+/* =========================
+   NAVBAR
+========================= */
 
 nav ul{
 
@@ -265,6 +323,10 @@ nav a:hover{
     transform: translateY(-2px);
 }
 
+/* =========================
+   SECTION CONTAINER
+========================= */
+
 .section-container{
 
     width: 100%;
@@ -273,8 +335,12 @@ nav a:hover{
 
     margin: auto;
 
-    padding: 100px 20px 30px;
+    padding: 180px 20px 40px;
 }
+
+/* =========================
+   LISTS
+========================= */
 
 .appointment-list,
 .hospital-list{
@@ -290,6 +356,10 @@ nav a:hover{
     margin-top: 30px;
 }
 
+/* =========================
+   CARDS
+========================= */
+
 .card{
 
     width: 300px;
@@ -301,6 +371,8 @@ nav a:hover{
     background: rgba(255,255,255,0.12);
 
     backdrop-filter: blur(12px);
+
+    -webkit-backdrop-filter: blur(12px);
 
     border: 1px solid rgba(255,255,255,0.12);
 
@@ -335,15 +407,22 @@ nav a:hover{
 
 .card p{
 
-    line-height: 1.6;
+    line-height: 1.7;
+
+    color: rgba(255,255,255,0.9);
 }
 
+/* =========================
+   FOOTER
+========================= */
 
 footer{
 
-    margin-top: 40px;
+    width: 100%;
 
-    padding: 18px;
+    margin-top: 50px;
+
+    padding: 20px;
 
     text-align: center;
 
@@ -351,14 +430,20 @@ footer{
 
     backdrop-filter: blur(8px);
 
+    -webkit-backdrop-filter: blur(8px);
+
     color: white;
 }
+
+/* =========================
+   RESPONSIVE
+========================= */
 
 @media(max-width: 768px){
 
     .auth-card{
 
-        padding: 30px;
+        padding: 35px 25px;
     }
 
     .card{
@@ -380,6 +465,11 @@ footer{
 
         padding: 8px 12px;
     }
+
+    .section-container{
+
+        padding-top: 200px;
+    }
 }
 
 @media(max-width: 480px){
@@ -391,7 +481,7 @@ footer{
 
     .auth-card h1{
 
-        font-size: 1.7rem;
+        font-size: 1.8rem;
     }
 
     form input{
@@ -402,5 +492,10 @@ footer{
     form button{
 
         padding: 14px;
+    }
+
+    .section-container{
+
+        padding-top: 220px;
     }
 }
