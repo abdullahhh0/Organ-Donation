@@ -1,45 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Organ Donation Platform</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Organ Donation Dashboard</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
 </head>
+
 <body>
+
+    <!-- HEADER -->
+
     <header>
-        <h1>Organ Donation Platform</h1>
+
+        <h1>
+            🩸 Organ Donation Platform
+        </h1>
+
         <nav>
+
             <ul>
-                <li><a href="#appointments">Appointments</a></li>
-                <li><a href="#hospitals">Hospitals</a></li>
-                <li><a href="login.html">Login/Register</a></li>
+
+                <li>
+                    <a href="#">
+                        Appointments
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Hospitals
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html">
+                        Logout
+                    </a>
+                </li>
+
             </ul>
+
         </nav>
+
     </header>
 
-    <section id="appointments" class="section-container">
-        <h2>Upcoming Appointments</h2>
-        <div class="appointment-list" id="appointment-list">
-            <!-- Appointments will be populated here by JavaScript -->
-        </div>
-    </section>
+    <!-- MAIN SECTION -->
 
-    <section id="hospitals" class="section-container">
-        <h2>Available Hospitals</h2>
-        <div class="hospital-list" id="hospital-list">
-            <!-- Hospitals will be populated here by JavaScript -->
+    <div class="section-container">
+
+        <!-- APPOINTMENTS -->
+
+        <h2 style="color:white; margin-bottom:20px;">
+            Upcoming Appointments
+        </h2>
+
+        <div class="appointment-list">
+
+            <div class="card">
+
+                <h3>
+                    John Doe
+                </h3>
+
+                <p>
+                    Organ: Kidney
+                </p>
+
+                <p>
+                    Date: 2024-11-01
+                </p>
+
+                <p>
+                    Hospital: City Hospital
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+                    Jane Smith
+                </h3>
+
+                <p>
+                    Organ: Liver
+                </p>
+
+                <p>
+                    Date: 2024-11-05
+                </p>
+
+                <p>
+                    Hospital: Healthcare Center
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+                    Mark Wilson
+                </h3>
+
+                <p>
+                    Organ: Heart
+                </p>
+
+                <p>
+                    Date: 2024-11-10
+                </p>
+
+                <p>
+                    Hospital: General Hospital
+                </p>
+
+            </div>
+
         </div>
-    </section>
+
+        <!-- HOSPITALS -->
+
+        <h2
+            style="
+                color:white;
+                margin-top:60px;
+                margin-bottom:20px;
+            "
+        >
+            Available Hospitals
+        </h2>
+
+        <div class="hospital-list">
+
+            <div class="card">
+
+                <h3>
+                    City Hospital
+                </h3>
+
+                <p>
+                    We need kidney donors urgently to support critical patients.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+                    Healthcare Center
+                </h3>
+
+                <p>
+                    Looking for heart and lung donors to assist transplant surgeries.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+                    General Hospital
+                </h3>
+
+                <p>
+                    We require cornea and skin donors to treat burn and injury patients.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
 
     <footer>
-        <p>&copy; 2024 Organ Donation Platform. All Rights Reserved.</p>
+
+        © 2026 Organ Donation Platform.
+        All Rights Reserved.
+
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
